@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul class="mainMenu menu">
+            <li class="active-nav">БАНК</li>
+            <li>БИЗНЕС</li>
+            <li>ИНВЕСТИЦИИ</li>
+            <li>СТРАХОВАНИЕ</li>
+            <li>МОБАЙЛ</li>
+            <li>ПУТЕШЕСТВИЯ</li>
+            <li>РАЗВЛЕЧЕНИЯ</li>
+        </ul>
+        <div class="login">
+            <button>
+                ВОЙТИ
+            </button>
+            <i class="fa-solid fa-bars menu-logo" id="menu-logo"></i>
+        </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+                <h1>
+                    Конвертер валют онлайн
+                </h1>
+            <div class="blocks-container">
+                <div class="block-left block">
+                    <p class="block-head">У меня есть </p>
+                    <div class="radio">
+                        <input type="radio" class="radio_input active" value="Rub" name="myRadio" id="Rub" checked>
+                        <label for="Rub" class="radio_label">Rub</label>
+                        <input type="radio" class="radio_input" value="Usd" name="myRadio" id="Usd">
+                        <label for="Usd" class="radio_label">Usd</label>
+                        <input type="radio" class="radio_input" value="Eur" name="myRadio" id="Eur">
+                        <label for="Eur" class="radio_label">Eur</label>
+                        <input type="radio" class="radio_input" value="Gbp" name="myRadio" id="Gbp">
+                        <label for="Gbp" class="radio_label">Gbp</label>
+                    </div>
+                    <div class="calculate-area">
+                        <input type="text" class="calc-value">
+                        <div class="info">
+                            <p class="detail">1&nbsp<span class="from">RUB</span>&nbsp=&nbsp<span class="rate"></span><span
+                                    class="to">USD</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-right block">
+                    <p class="block-head">Хочу приобрести</p>
+                    <div class="radio">
+                        <input type="radio" class="radio_input" value="Rub" name="myRadio1" id="Rub1">
+                        <label for="Rub1" class="radio_label">Rub</label>
+                        <input type="radio" class="radio_input active" value="Usd" name="myRadio1" id="Usd1" checked>
+                        <label for="Usd1" class="radio_label">Usd</label>
+                        <input type="radio" class="radio_input" value="Eur" name="myRadio1" id="Eur1">
+                        <label for="Eur1" class="radio_label">Eur</label>
+                        <input type="radio" class="radio_input" value="Gbp" name="myRadio1" id="Gbp1">
+                        <label for="Gbp1" class="radio_label">Gbp</label>
+                    </div>
+                    <div class="calculate-area">
+                        <input class="calc-value" type="text">
+                        <div class="info">
+                            <p class="detail">1&nbsp<span class="from">USD</span>&nbsp=&nbsp<span class="rate">RUB</span><span
+                                    class="to"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
